@@ -20,8 +20,11 @@ Antenna Rotator for Raspberry Pi
 ## Setup
   - Install the Pi HAT on the Pi https://learn.adafruit.com/adafruit-dc-and-stepper-motor-hat-for-raspberry-pi/assembly
   - Install Raspbian and the other prerequisites
+  - Download files from github Pi-Rotate and stepper directories
   - Test motor operation with program stepper.py
-  - In a terminal, start program Pi-Rotate.py   make note of the pseudo terminal name, probably it will be: /dev/pts/0
+  
+## Operation
+  - In a terminal, start program Pi-Rotate.py   make note of the pseudo terminal name, probably: /dev/pts/0
   - In another terminal, start program rotctld: rotctld -m 202 -r /dev/pts/0     (the last argument must match terminal name above)
   - In another terminal, start program rotctl: 	rotctl -m 2
     - use the P az el command to point the antenna North and level
